@@ -1,5 +1,55 @@
+<<<<<<< HEAD
 Square Injector
 ===============
+=======
+Dagger 1
+========
+
+A fast dependency injector for Android and Java.
+
+
+Deprecated – Please upgrade to Dagger 2
+---------------------------------------
+
+Square's Dagger 1.x is deprecated in favor of [Google's Dagger 2](https://github.com/google/dagger).
+Please see [the migration guide](https://google.github.io/dagger/dagger-1-migration.html) for help
+with the upgrade.
+
+
+Download Dagger 1
+-----------------
+
+You will need to include the `dagger-${dagger.version}.jar` in your
+application's runtime.  In order to activate code generation you will need to
+include `dagger-compiler-${dagger.version}.jar` in your build at compile time.
+
+In a Maven project, one would include the runtime in the dependencies section
+of your `pom.xml` (replacing `${dagger.version}` with the appropriate current
+release), and the `dagger-compiler` artifact as an "optional" or "provided"
+dependency:
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>com.squareup.dagger</groupId>
+    <artifactId>dagger</artifactId>
+    <version>${dagger.version}</version>
+  </dependency>
+  <dependency>
+    <groupId>com.squareup.dagger</groupId>
+    <artifactId>dagger-compiler</artifactId>
+    <version>${dagger.version}</version>
+    <optional>true</optional>
+  </dependency>
+</dependencies>
+```
+
+You can also find downloadable .jars on Maven Central. You'll need
+[Dagger][dl-dagger], [JavaPoet][dl-javapoet], and [javax.inject][dl-inject].
+
+Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
+
+>>>>>>> 572cdd2... Fix deprecation typos.
 
 A JSR-330 dependency injector for Android and Java.
 
